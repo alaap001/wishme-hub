@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a absolute path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+	background: url('wishmehubbg.png');
+	background-size: cover;
+}
+.middiv{
+	height: 100%;
+	padding: 100px 200px 100px 200px;
+}
+.decor_diwali{
+	background-color: black;
+	padding: 20px;
+}
+.special_message{
+	color: white;
+}
+.wishername_diwali{
+	font-size: 40px;
+	font-weight: 600;
+	font-family: sans-serif;
+	color: white;
+	text-transform: capitalize;
+}
+.diwaliwishimg{
+	position: relative;
+	width: 600px;
+}
+.diwali_main_decor{
+	position: relative;
+	top: -50px;
+}
+marquee{
+
+    width: 40px;
+    height: 100%;
+
+}
+.marquee-right{
+	width: 35px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.marquee-right img{
+
+	width: 100%;
+}
+.marquee-left{
+	
+	width: 35px;
+	
+	margin-bottom: 50px;
+}
+.marquee-left img{
+	width: 100%;
+}
+
+.heading{
+	font-weight: 900;
+	font-size: 50px;
+	padding: 15px;
+}

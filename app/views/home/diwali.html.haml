@@ -1,0 +1,73 @@
+.marquee.row
+	%marquee.col-md-1{'direction':'up','scrolldelay:':'5'}
+		=image_tag 'diwali1.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-left'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-left'
+		%br
+	%div.col-md-10.middiv
+		.decor_diwali
+			.diwaliwish.text-center
+				.wishername_diwali=@wisher
+				=image_tag 'wish.png' , class: 'diwaliwishimg'
+			.diwali_main_decor
+				.diwali_image.text-center
+					=image_tag 'candle.gif'
+				.special_message
+					%blockquote
+						%p 
+							May this joyous festival bring your family a lot of blessings in any form— money, food or whatsoever. Your family deserves such rewards for being a good one all throughout the year.
+						%footer 
+							%cite{'title':"Wisher Name"}
+								= @wisher
+				%form.form-inline.text-center
+					.form-group
+						%input.form-control{'type':'name','placeholder':'Name',id:'wisher_name'}
+						%input.form-control{'type':'name','placeholder':'Special Message'}
+						%btn.btn.btn-success{'id':'wisher_btn'} Wish
+
+	%marquee.col-md-1{'direction':'down','scrolldelay:':'5'}
+		=image_tag 'diwali1.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali2.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-right'
+		%br
+		=image_tag 'diwali1.png' , class:'marquee-right'
+		%br
+
