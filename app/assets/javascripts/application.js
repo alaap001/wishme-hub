@@ -23,6 +23,6 @@ $(document).on('click','#wisher_btn',function(){
    var doc = document.getElementById("wisher_name");
     var diwali_wisher = doc.value;
     console.log(diwali_wisher)
-   location.href = "http://localhost:3000/occasions/diwali/"+diwali_wisher; 
+   location.href = "https://floating-hamlet-93576.herokuapp.com/occasions/diwali/"+diwali_wisher; 
 });
 });
