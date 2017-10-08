@@ -14,7 +14,7 @@
  *= require_self
  */
 body{
-	background: url('wishmehubbg.png');
+	background-image: url('wishmehubbg.png');
 	background-size: cover;
 }
 .index_brief img{
