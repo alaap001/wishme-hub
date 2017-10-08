@@ -1,0 +1,29 @@
+.decordiv
+	.decor_diwali
+		.diwaliwish.text-center
+			.wishername_diwali
+				-if @wisher==nil
+					%p 'Your name here'
+				-else
+					=@wisher
+			=image_tag 'wish.png' , class: 'diwaliwishimg'
+		.birthday_main_decor
+			.diwali_image.text-center
+				.row
+					.birthday_image1.col-xs-5
+						=image_tag 'newyear.jpg'
+					.birthday_image2.col-xs-6
+						=image_tag 'new year1.gif'
+			.special_message
+				%blockquote
+					%p 
+						If the previous year hasn’t given you something to be happy and proud of, don’t fret. If the 31st of December signifies the end of a year, the 1st of January signifies the beginning. You have life; you have hope, go out there and accomplish all that you want.
+					%footer 
+						%cite{'title':"Wisher Name"}
+							= @wisher
+			%form.form-inline.text-center
+				.form-group
+					%input.form-control{'type':'name','placeholder':'Name',id:'wisher_name'}
+					%input.form-control{'type':'name','placeholder':'Special Message'}
+					%btn.btn.btn-success{'id':'wisher_btn'} Wish
+

@@ -1,1 +1,25 @@
-holi.html.haml
+.decordiv
+	.decor_diwali
+		.diwaliwish.text-center
+			.wishername_diwali
+				-if @wisher==nil
+					%p 'Your name here'
+				-else
+					=@wisher
+			=image_tag 'wish.png' , class: 'diwaliwishimg'
+		.holi_main_decor
+			.diwali_image.text-center
+				=image_tag 'Holi.gif'
+			.special_message
+				%blockquote
+					%p 
+						Let it go, just color it red and yellow and green and purple. Life is letting it go and playing Holi!
+					%footer 
+						%cite{'title':"Wisher Name"}
+							= @wisher
+			%form.form-inline.text-center
+				.form-group
+					%input.form-control{'type':'name','placeholder':'Name',id:'wisher_name'}
+					%input.form-control{'type':'name','placeholder':'Special Message'}
+					%btn.btn.btn-success{'id':'wisher_btn'} Wish
+

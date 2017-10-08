@@ -1,15 +1,24 @@
 .decordiv
 	.decor_diwali
 		.diwaliwish.text-center
-			.wishername_diwali=@wisher
+			.wishername_diwali
+				-if @wisher==nil
+					%p 'Your name'
+				-else
+					=@wisher
 			=image_tag 'wish.png' , class: 'diwaliwishimg'
-		.diwali_main_decor
-			.diwali_image.text-center
-				=image_tag 'candle.gif'
+		.birthday_main_decor
+			.row
+				.birthday_image1.col-xs-5
+					=image_tag 'birthday1.gif'
+				.birthday_image2.col-xs-6
+					=image_tag 'birthday2.gif'
+			%br
 			.special_message
 				%blockquote
 					%p 
-						May this joyous festival bring your family a lot of blessings in any form— money, food or whatsoever. Your family deserves such rewards for being a good one all throughout the year.
+						On your special day, I wish you good luck. I hope this wonderful day will fill up your heart with joy and blessings. Have a fantastic birthday, celebrate the happiness on every day of your life. Happy Birthday!
+
 					%footer 
 						%cite{'title':"Wisher Name"}
 							= @wisher

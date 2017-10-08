@@ -30,6 +30,7 @@ body{
 .logo{
 	padding: 20px;
 }
+/* diwali styling */
 .decor_diwali{
 	background-color: black;
 	padding: 20px;
@@ -89,6 +90,17 @@ marquee{
 	font-size: 50px;
 	padding: 15px;
 }
+
+/* Birthday wishes */
+
+.birthday_main_decor img{
+	position: relative;
+	width: 100%;
+	top: -50px;
+}
+
+/* mobile views */
+
 @media only screen and (max-width: 700px) {
 
 .index_brief img{

@@ -3,7 +3,10 @@ before_action :wisher
 
 def wisher
 @wisher = params[:wisher]
+
+
 end
+
 def index
 
 end
