@@ -17,16 +17,17 @@ body{
 	background-image: url('wishmehubbg.png');
 	background-size: cover;
 }
+
 .index_brief img{
 	height: 350px;
 	width: 100%;
 }
+
+.logo img{
+	height: 250px;
+	}
 .logo{
-	height: 200px;
-}
-.middiv{
-	height: 100%;
-	padding: 100px 200px 100px 200px;
+	padding: 20px;
 }
 .decor_diwali{
 	background-color: black;
@@ -35,6 +36,10 @@ body{
 .special_message{
 	color: white;
 }
+.decordiv
+{
+	padding: 50px;
+}
 .wishername_diwali{
 	font-size: 40px;
 	font-weight: 600;
@@ -42,10 +47,13 @@ body{
 	color: white;
 	text-transform: capitalize;
 }
+
+
 .diwaliwishimg{
 	position: relative;
-	width: 600px;
+	width: 500px;
 }
+
 .diwali_main_decor{
 	position: relative;
 	top: -50px;
@@ -59,7 +67,7 @@ marquee{
 .marquee-right{
 	width: 35px;
 	margin-top: 50px;
-	margin-left: 50px;
+	
 }
 .marquee-right img{
 
@@ -79,4 +87,58 @@ marquee{
 	font-weight: 900;
 	font-size: 50px;
 	padding: 15px;
+}
+@media only screen and (max-width: 700px) {
+
+.index_brief img{
+	height: 150px;
+	width: 100%;
+}
+
+.logo img{
+	height: 150px;
+	width: 400px;
+	}
+.logo{
+	padding: 20px;
+}
+
+.decordiv
+{
+	padding: 20px;
+}
+.wishername_diwali{
+	font-size: 20px;
+
+}
+
+.diwaliwishimg{
+	position: relative;
+	width: 270px;
+}
+
+.diwali_main_decor{
+	position: relative;
+	top: -10px;
+}
+
+marquee{
+
+    width: 30px;
+    height: 100%;
+
+}
+.marquee-right{
+	width: 25px;
+}
+
+.marquee-left{
+	
+	width: 25px;
+}
+.heading{
+	font-weight: 900;
+	font-size: 30px;
+	padding: 10px;
+}
 }

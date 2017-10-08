@@ -1,0 +1,21 @@
+.decordiv
+	.decor_diwali
+		.diwaliwish.text-center
+			.wishername_diwali=@wisher
+			=image_tag 'wish.png' , class: 'diwaliwishimg'
+		.diwali_main_decor
+			.diwali_image.text-center
+				=image_tag 'candle.gif'
+			.special_message
+				%blockquote
+					%p 
+						May this joyous festival bring your family a lot of blessings in any form— money, food or whatsoever. Your family deserves such rewards for being a good one all throughout the year.
+					%footer 
+						%cite{'title':"Wisher Name"}
+							= @wisher
+			%form.form-inline.text-center
+				.form-group
+					%input.form-control{'type':'name','placeholder':'Name',id:'wisher_name'}
+					%input.form-control{'type':'name','placeholder':'Special Message'}
+					%btn.btn.btn-success{'id':'wisher_btn'} Wish
+
