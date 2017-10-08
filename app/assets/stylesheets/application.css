@@ -17,6 +17,13 @@ body{
 	background: url('wishmehubbg.png');
 	background-size: cover;
 }
+.index_brief img{
+	height: 350px;
+	width: 100%;
+}
+.logo{
+	height: 200px;
+}
 .middiv{
 	height: 100%;
 	padding: 100px 200px 100px 200px;

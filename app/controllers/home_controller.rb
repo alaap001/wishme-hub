@@ -16,6 +16,9 @@ def diwali
 	
 end
 
+def birthday
+end
+
 def holi
 end
 
