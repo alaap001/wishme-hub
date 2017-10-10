@@ -58,7 +58,9 @@
 								%b Creator: ALAAP DHALL
 								%br
 								%i We appreciate your love, and suppor. please give your feedback and any suggestions.
-								
+								%br
+							.text-center{'data-target':'#feedback' , 'data-toggle':'modal'}
+								.btn.btn-primary.modallink.grey Feedback
 
 				
 				%marquee.col-xs-1{'direction':'down','scrolldelay:':'5'}
@@ -87,4 +89,4 @@
 					=image_tag 'diwali1.png' , class:'marquee-right'
 					%br
 
-
+= render 'feedback'

@@ -1,0 +1,20 @@
+#feedback.modal.fade{'tabindex':-1 , 'role':'dialog','aria-labelledby':'feedback'}
+	.modal-dialog.modal-lg{'role':'document'}
+		.modal-content.text-center
+			#feedback.container
+				.text-center.lead
+					Give Your Valuable FeedBack
+					%br
+				= form_for @feedback do |f|
+					.form-group
+						=f.label :name , class:'h2 '
+						= f.text_field :name, class:'form-control'
+					.form-group
+						=f.label :email , class:'h2 '
+						= f.email_field :email, class:'form-control'
+					.form-group
+						=f.label :what_you_think , class:'h2 '
+						= f.text_area :feedback, class:'form-control'
+					.form-group
+						= f.submit :GiveFeedback , class:'btn btn-lg btn-primary'
+					%br

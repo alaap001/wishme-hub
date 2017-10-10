@@ -102,10 +102,13 @@ marquee{
 	height: 250px;
 }
 .footer{
-	padding: 40px 0 0 0;
-	margin-top: 20px;
-	height: 100px;
+	padding: 40px 0 40px 0;
+	margin: 20px 0 20px 0;
+	
 	background-color: #efefef;
+}
+#feedback{
+	width: 100%;
 }
 /* mobile views */
 

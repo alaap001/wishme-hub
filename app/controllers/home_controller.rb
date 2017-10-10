@@ -3,7 +3,7 @@ before_action :wisher
 
 def wisher
 @wisher = params[:wisher]
-
+@feedback = Feedback.new
 
 end
 
