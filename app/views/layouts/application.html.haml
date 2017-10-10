@@ -44,6 +44,12 @@
 						.nav.text-center.logo
 							=link_to image_tag('logo.png') , root_path
 					= yield
+					.footer
+						%footer
+							.text-center
+								%b Creator: ALAAP DHALL
+							
+
 				
 				%marquee.col-xs-1{'direction':'down','scrolldelay:':'5'}
 					=image_tag 'diwali1.png' , class:'marquee-right'

@@ -24,6 +24,13 @@
 			%form.form-inline.text-center
 				.form-group
 					%input.form-control{'type':'name','placeholder':'Name',id:'wisher_name'}
-					%input.form-control{'type':'name','placeholder':'Special Message'}
+					/%input.form-control{'type':'name','placeholder':'Special Message'}
 					%btn.btn.btn-success{'id':'wisher_btn'} Wish
+					%br
+					%hr
+
+					- if @wisher != nil
+						%label Share your URL:
+						%input.form-control{'type':'url','placeholder':'sharing url','id':'urlinput','value':"#{request.original_url}"}
+
 
