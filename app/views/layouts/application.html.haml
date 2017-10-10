@@ -11,6 +11,7 @@
 			google_ad_client: "ca-pub-8656288428865042",
 			enable_page_level_ads: true
 			});
+
 	%body
 		.container-fluid
 			.marquee.row
@@ -44,11 +45,20 @@
 						.nav.text-center.logo
 							=link_to image_tag('logo.png') , root_path
 					= yield
+					.h1
+						%small 
+							Wishme-hub is specially designed to wish your family and friends in a better and different way. We have many gif's for many occasions, and we allways keep on adding more. All you needd to do is write your name in the name box and press the
+							%i
+								wish
+							button.
+
 					.footer
 						%footer
 							.text-center
 								%b Creator: ALAAP DHALL
-							
+								%br
+								%i We appreciate your love, and suppor. please give your feedback and any suggestions.
+								
 
 				
 				%marquee.col-xs-1{'direction':'down','scrolldelay:':'5'}
