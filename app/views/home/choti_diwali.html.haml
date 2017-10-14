@@ -3,22 +3,25 @@
 		.diwaliwish.text-center
 			.wishername_diwali
 				-if @wisher==nil
-					%p 'Your name here'
+					%p 'Your name'
 				-else
 					=@wisher
 			=image_tag 'wish.png' , class: 'diwaliwishimg'
-		.diwali_main_decor
-			.row.text-center
-				.diwali_image.col-xs-5
-					=image_tag 'candle.gif'
-				.diwali_image.col-xs-7
-					=image_tag 'diwali3.gif'
-				
+		.birthday_main_decor
+			.row
+				.birthday_image1.col-xs-6
+					=image_tag 'choti_diwali2.gif'
+				.birthday_image2.col-xs-6
+					=image_tag 'choti_diwali_gif.gif'
 			%br
 			.special_message
 				%blockquote
-					%p 
-						May this joyous festival bring your family a lot of blessings in any form— money, food or whatsoever. Your family deserves such rewards for being a good one all throughout the year.
+					%p.lead
+						Choti hi sahi,
+						Diwali to hai...
+						%br
+						HAPPY DIWALI
+
 					%footer 
 						%cite{'title':"Wisher Name"}
 							= @wisher
@@ -33,3 +36,6 @@
 					- if @wisher != nil
 						%label Share your URL:
 						%input.form-control{'type':'url','placeholder':'sharing url','id':'urlinput','value':"#{request.original_url}"}
+
+
+

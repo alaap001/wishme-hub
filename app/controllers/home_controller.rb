@@ -28,6 +28,9 @@ end
 def christmas
 end
 
+def choti_diwali
+end
+
 def newyear
 
 end

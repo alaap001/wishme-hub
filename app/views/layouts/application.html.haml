@@ -44,6 +44,10 @@
 					.navbar
 						.nav.text-center.logo
 							=link_to image_tag('logo.png') , root_path
+					.text-center{'data-target':'#occasionoption' , 'data-toggle':'modal'}
+						.btn.btn-primary See All occasions
+					%hr
+					= render 'modaldiv'
 					= yield
 					.h1
 						%small 
